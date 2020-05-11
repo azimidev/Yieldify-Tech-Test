@@ -1,10 +1,6 @@
 /**
- * Vector2D class.
  * This file is taken from common GitHub Gist and modified.
- * Some of the methods are only used for tests.
- * I have written this class with ES6 first and then I compiled it to ES5
  */
-
 (function () {
 	'use strict';
 
@@ -88,6 +84,9 @@
 	Vector2D.random = function () {
 		return new Vector2D(Math.random(), Math.random());
 	};
+
+	// abs of the nonzero constant
+	Vector2D.NEAR_ZERO = 0.01;
 
 	let root =
 		(typeof self == 'object' && self.self === self && self) ||

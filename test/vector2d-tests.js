@@ -64,4 +64,16 @@ describe('Vector2D', () => {
 			); // Y axis negative
 		});
 	});
+	describe('is near zero vector', () => {
+		it('should return true if the abs of the nonzero constant is smaller than NEAR_ZERO', () => {
+			assert(new Vector2D(0.009, 0).isNearZero() === true);
+			assert(new Vector2D(-0.005, 0).isNearZero() === true);
+			assert(new Vector2D(0.02, 0).isNearZero() === false);
+			assert(new Vector2D(-0.011, 0).isNearZero() === false);
+			assert(new Vector2D(0, 0.0003).isNearZero() === true);
+			assert(new Vector2D(0, -0.00999).isNearZero() === true);
+			assert(new Vector2D(0, 0.01111).isNearZero() === false);
+			assert(new Vector2D(0, -0.02).isNearZero() === false);
+		});
+	});
 });
