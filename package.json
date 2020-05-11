@@ -1,0 +1,12 @@
+{
+  "name": "Yieldify-Tech-Test",
+  "version": "1.0.0",
+  "description": "Hassan Azimi Yieldify Tech Test",
+  "main": "index.js",
+  "author": "Hassan Azimi <hassanazimi@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^7.1.2",
+    "prettier": "^2.0.5"
+  }
+}
