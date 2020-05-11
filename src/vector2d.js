@@ -76,4 +76,16 @@
 	Vector2D.prototype.isUndefined = function () {
 		return typeof this.X == 'undefined' || typeof this.Y == 'undefined';
 	};
+
+	Vector2D.prototype.clone = function () {
+		return new Vector2D(this.X, this.Y);
+	};
+
+	Vector2D.zero = function () {
+		return new Vector2D(0, 0);
+	};
+
+	Vector2D.random = function () {
+		return new Vector2D(Math.random(), Math.random());
+	};
 })();
