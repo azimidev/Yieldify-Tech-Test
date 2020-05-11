@@ -5,6 +5,9 @@
     "main": "index.js",
     "author": "Hassan Azimi <hassanazimi@users.noreply.github.com>",
     "license": "MIT",
+    "scripts": {
+        "test": "mocha"
+    },
     "devDependencies": {
         "mocha": "^7.1.2",
         "prettier": "^2.0.5"

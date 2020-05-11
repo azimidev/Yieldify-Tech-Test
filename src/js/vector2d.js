@@ -89,5 +89,22 @@
 		return new Vector2D(Math.random(), Math.random());
 	};
 
-	window.Vector2D = Vector2D;
+	let root =
+		(typeof self == 'object' && self.self === self && self) ||
+		(typeof global == 'object' && global.global === global && global) ||
+		this ||
+		{};
+
+	if (typeof exports != 'undefined' && !exports.nodeType) {
+		if (
+			typeof module != 'undefined' &&
+			!module.nodeType &&
+			module.exports
+		) {
+			exports = module.exports = Vector2D;
+		}
+		exports.Vector2D = Vector2D;
+	} else {
+		root.Vector2D = Vector2D;
+	}
 })();
