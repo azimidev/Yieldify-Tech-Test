@@ -52,4 +52,28 @@
 	Vector2D.prototype.sub = function (v) {
 		return new Vector2D(this.X - v.X, this.Y - v.Y);
 	};
+
+	Vector2D.prototype.dot = function (v) {
+		return this.X * v.X + this.Y * v.Y;
+	};
+
+	Vector2D.prototype.opposite = function () {
+		return new Vector2D(-this.X, -this.Y);
+	};
+
+	Vector2D.prototype.direction = function (v) {
+		return v.sub(this);
+	};
+
+	Vector2D.prototype.isZero = function () {
+		return this.X === 0 && this.Y === 0;
+	};
+
+	Vector2D.prototype.isNearZero = function () {
+		return this.length() < Vector2D.NEAR_ZERO;
+	};
+
+	Vector2D.prototype.isUndefined = function () {
+		return typeof this.X == 'undefined' || typeof this.Y == 'undefined';
+	};
 })();
