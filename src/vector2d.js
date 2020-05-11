@@ -88,4 +88,6 @@
 	Vector2D.random = function () {
 		return new Vector2D(Math.random(), Math.random());
 	};
+
+	window.Vector2D = Vector2D;
 })();
