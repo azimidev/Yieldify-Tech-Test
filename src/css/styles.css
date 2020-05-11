@@ -1,0 +1,52 @@
+body {
+    color: #16a085;
+    background-color: #ecf0f1;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    #dimensions {
+        height: 133px;
+        margin: 50px auto 0;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 630px) {
+    #dimensions {
+        height: 266px;
+        margin: 50px auto 0;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 631px) and (max-width: 1500px) {
+    #dimensions {
+        height: 399px;
+        margin: 75px auto 0;
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1501px) {
+    #dimensions {
+        height: 600px;
+        margin: 100px auto 0;
+        width: 900px;
+    }
+}
+
+#canvas {
+    border: 5px solid black;
+    border-radius: 10px;
+    background: white;
+}
+
+#info,
+#simulation {
+    text-align: center;
+}
+
+#info {
+    margin-top: 100px;
+}
