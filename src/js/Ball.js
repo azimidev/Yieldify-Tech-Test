@@ -4,7 +4,7 @@
  * Some of the functionalities are taken from a GitHub Gist
  */
 (function () {
-	'use strict';
+	"use strict";
 
 	/**
 	 * Balls class.
@@ -162,8 +162,8 @@
 	// Establish the root object, `window` (`self`) in the browser, `global`
 	// on the server, or `this` in some virtual machines.
 	var root =
-		(typeof self == 'object' && self.self === self && self) ||
-		(typeof global == 'object' && global.global === global && global) ||
+		(typeof self == "object" && self.self === self && self) ||
+		(typeof global == "object" && global.global === global && global) ||
 		this ||
 		{};
 
@@ -172,9 +172,9 @@
 	// the browser, add Balls as a global object.
 	// (`nodeType` is checked to ensure that `module`
 	// and `exports` are not HTML elements.)
-	if (typeof exports != 'undefined' && !exports.nodeType) {
+	if (typeof exports != "undefined" && !exports.nodeType) {
 		if (
-			typeof module != 'undefined' &&
+			typeof module != "undefined" &&
 			!module.nodeType &&
 			module.exports
 		) {
